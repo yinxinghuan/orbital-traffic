@@ -1,0 +1,202 @@
+{
+  "idle": {
+    "viewport": [
+      390,
+      844
+    ],
+    "debug": {
+      "baselineMode": false,
+      "phase": "idle",
+      "flightSpeedScale": 1,
+      "flightCount": 3500,
+      "loadedRouteCount": 3500,
+      "sourceRouteCount": 34297,
+      "textureFile": "world.topo-2048.jpg",
+      "activePointers": 0,
+      "cameraPosition": [
+        -3536.6,
+        2077.5,
+        4379.1
+      ],
+      "cameraDistance": 6000,
+      "pathOpacity": 0.6,
+      "earthBrightness": 1,
+      "canvas": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    "bootError": null,
+    "hintText": "HOLD TWO FINGERS · FREEZE THE SKY",
+    "title": "03 / AIRSPACE STUDY\nORBITAL\nTRAFFIC",
+    "datGuiHidden": true
+  },
+  "rotated": {
+    "baselineMode": false,
+    "phase": "idle",
+    "flightSpeedScale": 1,
+    "flightCount": 3500,
+    "loadedRouteCount": 3500,
+    "sourceRouteCount": 34297,
+    "textureFile": "world.topo-2048.jpg",
+    "activePointers": 0,
+    "cameraPosition": [
+      1145.7,
+      -1601.1,
+      5667.8
+    ],
+    "cameraDistance": 6000,
+    "pathOpacity": 0.6,
+    "earthBrightness": 1,
+    "canvas": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "frozen": {
+    "baselineMode": false,
+    "phase": "frozen",
+    "flightSpeedScale": 0.003,
+    "flightCount": 3500,
+    "loadedRouteCount": 3500,
+    "sourceRouteCount": 34297,
+    "textureFile": "world.topo-2048.jpg",
+    "activePointers": 2,
+    "cameraPosition": [
+      1797.9,
+      -2112.8,
+      5320.1
+    ],
+    "cameraDistance": 6000,
+    "pathOpacity": 0.82,
+    "earthBrightness": 0.55,
+    "canvas": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "released": {
+    "baselineMode": false,
+    "phase": "release",
+    "flightSpeedScale": 2.399,
+    "flightCount": 3500,
+    "loadedRouteCount": 3500,
+    "sourceRouteCount": 34297,
+    "textureFile": "world.topo-2048.jpg",
+    "activePointers": 0,
+    "cameraPosition": [
+      2076.3,
+      -2348.5,
+      5116
+    ],
+    "cameraDistance": 6000,
+    "pathOpacity": 0.82,
+    "earthBrightness": 0.55,
+    "canvas": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "recovered": {
+    "baselineMode": false,
+    "phase": "idle",
+    "flightSpeedScale": 1,
+    "flightCount": 3500,
+    "loadedRouteCount": 3500,
+    "sourceRouteCount": 34297,
+    "textureFile": "world.topo-2048.jpg",
+    "activePointers": 0,
+    "cameraPosition": [
+      2274.4,
+      -2525.9,
+      4944.4
+    ],
+    "cameraDistance": 6000,
+    "pathOpacity": 0.6,
+    "earthBrightness": 1,
+    "canvas": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "compact": {
+    "baselineMode": false,
+    "phase": "idle",
+    "flightSpeedScale": 1,
+    "flightCount": 3500,
+    "loadedRouteCount": 3500,
+    "sourceRouteCount": 34297,
+    "textureFile": "world.topo-2048.jpg",
+    "activePointers": 0,
+    "cameraPosition": [
+      -3544,
+      2077.5,
+      4373.2
+    ],
+    "cameraDistance": 6000,
+    "pathOpacity": 0.6,
+    "earthBrightness": 1,
+    "canvas": {
+      "width": 320,
+      "height": 568
+    }
+  },
+  "desktop": {
+    "baselineMode": false,
+    "phase": "idle",
+    "flightSpeedScale": 1,
+    "flightCount": 7000,
+    "loadedRouteCount": 7000,
+    "sourceRouteCount": 34297,
+    "textureFile": "world.topo-4096.jpg",
+    "activePointers": 0,
+    "cameraPosition": [
+      -3547.1,
+      2077.5,
+      4370.6
+    ],
+    "cameraDistance": 6000,
+    "pathOpacity": 0.6,
+    "earthBrightness": 1,
+    "canvas": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "baseline": {
+    "debug": {
+      "baselineMode": true,
+      "phase": "idle",
+      "flightSpeedScale": 1,
+      "flightCount": 3500,
+      "loadedRouteCount": 34297,
+      "sourceRouteCount": 34297,
+      "textureFile": "world.topo.jpg",
+      "activePointers": 0,
+      "cameraPosition": [
+        -3558.2,
+        2081,
+        4373.9
+      ],
+      "cameraDistance": 6010.2,
+      "pathOpacity": 0.6,
+      "earthBrightness": 1,
+      "canvas": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    "productUiHidden": true,
+    "datGuiVisible": true
+  },
+  "errorState": {
+    "hidden": false,
+    "text": "AIRSPACE UNAVAILABLE\nTAP TO RELOAD",
+    "debug": {
+      "baselineMode": false,
+      "phase": "error",
+      "forceError": true
+    }
+  },
+  "errors": []
+}

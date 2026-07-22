@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta name="game-uuid" content="027698f2-3ef4-43f4-9124-29bf5ce9c878" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#02050a" />
+    <link rel="icon" type="image/x-icon" href="./icon.ico" />
+    <title>Orbital Traffic</title>
+    <script>document.documentElement.classList.toggle('ot-baseline', new URLSearchParams(location.search).get('baseline') === '1')</script>
+  </head>
+  <body>
+    <div id="loading-screen" class="ot-loading" role="status">
+      <span class="ot-loading__orbit"></span>
+      <span data-i18n="loading">正在测绘空域</span>
+    </div>
+
+    <main class="ot-ui" aria-label="Orbital Traffic interactive experience">
+      <header class="ot-title" aria-hidden="true">
+        <span>03 / AIRSPACE STUDY</span>
+        <h1>ORBITAL<br />TRAFFIC</h1>
+      </header>
+      <div class="ot-readout" aria-live="polite">
+        <span class="ot-readout__pulse"></span>
+        <strong data-readout>3,500 FLIGHTS</strong>
+      </div>
+      <button class="ot-replay" type="button" aria-label="Replay camera intro">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.8 8.1A8 8 0 1 1 4 14"/><path d="M4.8 3.8v4.3h4.3"/></svg>
+      </button>
+      <div class="ot-ghost" aria-hidden="true">
+        <span class="ot-ghost__finger ot-ghost__finger--left"><svg viewBox="0 0 24 24"><path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.92-1.38z"/></svg></span>
+        <span class="ot-ghost__finger ot-ghost__finger--right"><svg viewBox="0 0 24 24"><path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.92-1.38z"/></svg></span>
+        <span class="ot-ghost__ring"></span>
+      </div>
+      <div class="ot-hint" role="status">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.92-1.38z"/></svg>
+        <span data-i18n="hint">双指静止按住 · 冻结空域</span>
+      </div>
+      <div class="ot-error" hidden>
+        <strong data-i18n="errorTitle">空域不可用</strong>
+        <span data-i18n="errorBody">轻触重新载入</span>
+      </div>
+    </main>
+    <script>
+      window.addEventListener('error', event => { window.__ORBITAL_TRAFFIC_ERROR__ = event.error?.stack || event.message })
+      window.addEventListener('unhandledrejection', event => { window.__ORBITAL_TRAFFIC_ERROR__ = event.reason?.stack || String(event.reason) })
+    </script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
