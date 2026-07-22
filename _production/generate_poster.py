@@ -20,5 +20,5 @@ draw.multiline_text((78, 73), "ORBITAL\nTRAFFIC", font=title_font, fill=(240, 24
 
 poster = ROOT / "public/poster.png"
 thumb = ROOT / "_production/poster-thumb.png"
-square.save(poster, optimize=True)
+square.quantize(colors=192, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.FLOYDSTEINBERG).save(poster, optimize=True)
 square.resize((160, 160), Image.Resampling.LANCZOS).save(thumb, optimize=True)
