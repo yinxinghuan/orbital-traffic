@@ -1,0 +1,10 @@
+{
+  "endpoint": "https://chat.aiwaves.tech/aigram/api/gen-image",
+  "origin": "https://aigram.app",
+  "generated_at": "2026-07-23T03:31:03+08:00",
+  "prompt_file": "_production/poster-request.json",
+  "ref_url": "https://raw.githubusercontent.com/yinxinghuan/orbital-traffic/main/public/poster-reference.png",
+  "image_url": "https://cdn.aiwaves.tech/prod/telegram/avatar/0/1784748663482206.webp",
+  "raw": "_production/poster-source-final.webp",
+  "postprocess": "Crop platform portrait result to square, resize to 1024, add title in upper safe area, export 160 thumbnail."
+}
